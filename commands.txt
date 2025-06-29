@@ -1,0 +1,36 @@
+conda create -p venv python==3.8 -y ## Project ke andar hi ek Conda-based Python 3.8 virtual environment banana — taaki tum us project me independent packages aur version ke sath kaam kar sako, bina system ke Python ko chhede.
+
+conda activate venv/
+----
+git init and all steps to push in git hub
+
+------
+git remote -v shows the URLs of the remote repositories your local Git project is connected to for fetching and pushing.
+-------
+
+
+
+
+
+
+
+
+
+-----
+PS D:\mlproject> git push origin main
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+PS D:\mlproject> 
+--------  Error _---------------------------
+to solve this
+github settings -> SSH and GPG keys -> run command ssh-keygen -t rsa
+and then run cat ~/.ssh/id_rsa.pub to copy ssh key
+and then paste in github ssh key 
+and the git push origin main
+
+
+----
+-e . this automatically trigger setup.py file
