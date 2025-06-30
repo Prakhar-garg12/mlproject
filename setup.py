@@ -19,14 +19,16 @@ def get_requirements(file_path:str)->List[str]:
     return requirements
 
 
-
 setup(
 name='mlproject',
 version='0.0.1',
 author='Prakhar',
 author_email='prakhargarg0611@gmail.com',
-packages=find_packages(),
+packages=find_packages(), ## find_packages() ka kaam hai:
+##👉 Automatically tumhare project ke andar sabhi Python packages (folders) ko dhoondhna jo install hone chahiye.
 # install_requires=['pandas','numpy','seaborn']
+
+
 install_requires=get_requirements('requirements.txt')
 
 )
