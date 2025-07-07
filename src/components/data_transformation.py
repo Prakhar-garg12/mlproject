@@ -13,7 +13,7 @@ from src.logger import logging
 import os
 
 from src.utils import save_object
-
+ 
 @dataclass
 class DataTransformationConfig:
     preprocessor_obj_file_path=os.path.join('artifacts','preprocessor.pkl')
@@ -24,7 +24,7 @@ class DataTransformation:
 
     def get_data_transformer_object(self):
         '''
-        This function is responsible for da ta transformation
+        This function is responsible for data transformation
 
         '''
         try:
